@@ -1,4 +1,4 @@
-# Direct Sequencing of tRNA-Phe using Anchor-based Algorithm
+# Direct Sequencing of RNA using Anchor-based Algorithm
 
 Copyright (c) 2020 Wenjia Li, Shenglong Zhang, New York Institute of Technology
 
