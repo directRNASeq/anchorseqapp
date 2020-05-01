@@ -1,0 +1,1 @@
+Note: for the anchor_bank.csv file, please specify one anchor at each time, so as to achieve the best reading accuracy.

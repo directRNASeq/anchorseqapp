@@ -1,0 +1,27 @@
+Choose file to upload<br>
+<form action="http://localhost:8080/sequencing-0.0.1-SNAPSHOT/rest/upload" target="dummyframe" method="post" enctype="multipart/form-data">
+	<input name="file" id="filename" type="file" /><br><br>
+    <button name="submit" type="submit" onclick="submitData()">Upload</button>
+</form>
+<button name="display" onclick="showPicture()">Show result</button>
+<img style="display:none;" id="bigpic" src="bigpic" />
+<iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
+<body>
+<div id="modal_popup">
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script>
+    function showPicture() {
+        var sourceOfPicture = "http://localhost:8080/images/testplot.png";
+        var img = document.getElementById('bigpic')
+        img.src = sourceOfPicture.replace('90x90', '225x225');
+        img.style.display = "block";
+}
+</script>
+<script type="text/javascript">
+  function submitData(event) {
+    alert('Data have been submitted successfully!');
+  }
+</script>
+</body>
